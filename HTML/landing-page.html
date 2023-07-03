@@ -4,37 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ura-235</title>
+    <title>Ura235</title>
     <link rel="stylesheet" href="/CSS/landing-page.css">
 </head>
 <body>
     <header>
-       
-        <div class="logo">
-            <img src="/Imgs/radiator.png" alt="logo" id="logo">
-            <div id="font">Ura-235</div>
-        </div>
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <nav class="navbar">
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="#" class="nav-link active">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-            </ul>
-        </nav>       
+            <div class="logo">
+                <img src="/Imgs/radiator.png" alt="logo" id="logo">
+                <div id="font">Ura235</div>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
     </header>
+    <section class="banner"></section>
+    <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+            var hd = document.querySelector("header");
+            hd.classList.toggle("sticky",window.scrollY =0);
+        })
+    </script>
+    <div class="page one"></div>
+    <div class="page two"></div>
 </body>
 </html>
